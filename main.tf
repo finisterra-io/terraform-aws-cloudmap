@@ -10,7 +10,8 @@ resource "aws_service_discovery_service" "this" {
   name        = each.key
   description = each.value.description
   dns_config {
-    namespace_id = aws_service_discovery_private_dns_namespace.this[0].id
+    namespace_id   = aws_service_discovery_private_dns_namespace.this[0].id
+    routing_policy = each.value.routing_policy
     dynamic "dns_records" {
       for_each = each.value.dns_records
       content {

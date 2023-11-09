@@ -36,4 +36,6 @@ resource "aws_service_discovery_service" "this" {
       failure_threshold = health_check_custom_config.value.failure_threshold
     }
   }
+
+  tags = each.value.tags
 }

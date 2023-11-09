@@ -11,6 +11,7 @@ variable "vpc_name" {
 variable "service_names" {
   description = "The names of the services to create"
   type        = map(any)
+  default     = {}
 }
 
 variable "create_private_dns_namespace" {

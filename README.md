@@ -37,5 +37,7 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The ID of the private DNS namespace |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
